@@ -1,0 +1,4 @@
+https://discuss.streamlit.io/t/check-if-running-in-a-streamlit-session/842/6
+https://docs.streamlit.io/library/get-started/multipage-apps/create-a-multipage-app
+https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart
+https://docs.streamlit.io/library/api-reference/control-flow/st.form
