@@ -10,11 +10,11 @@ Another future project is data about women professors in STEM.
 
 ## Repository structure
 *Folder Structure*
--- data/ you will find all relevant data for figure generation
--- pages/ strucutre and code for streamlit page generation
--- scripts/ scripts used in the pages
--- text/ text files for the pages to draw from so that pages won't be too crowded
--- in_progress/ pages I'm thinking to add but aren't really active work
+- data/ you will find all relevant data for figure generation
+- pages/ strucutre and code for streamlit page generation
+- scripts/ scripts used in the pages
+- text/ text files for the pages to draw from so that pages won't be too crowded
+- in_progress/ pages I'm thinking to add but aren't really active work
 
 # Author
 Contributors names and contact info
