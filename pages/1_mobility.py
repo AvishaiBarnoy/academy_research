@@ -28,50 +28,20 @@ st.write("""
 """)
 
 subject = st.sidebar.radio("Select subjec to show flow", ("Physics", "Chemistry"))
-if subject == "Physics":
-    path = "../data/physicists.txt"
-    sank_fig = sankey(Path(__file__).parent / path, subject)
-    st.write(f" ## {subject.capitalize()}")
-    st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
-    st.caption(f"""{subject.capitalize()} PI's flow. On the left where PI's studied and on the right where they got their tenure
-            position.""")
-    st.write("""
-        ### Analysis
-        Each institute (except Ariel and BGU) has the highest precentage of researchers from the same institue.
-        This would make sense as researchers already know the candidate and if he's goog enough he will be accepted.
-        I don't understand why in BGU only 5% of the physics faculty studied at BGU. Ariel makes sense as it is still
-        a very young institution. On the other side there is WIS with 54% faculty who studied at WIS. HUJI is at 30% HUJI
-        and 30% WIS, while TAU and Technion have a higher precentage of TAU and Technion than WIS recpetvially.
-        
-        Looking at raw numbers WIS trained 38% of Israeli trained physicists, TAU coming $2^{nd}$ with 23%. When on takes
-        into account people who studied abroad the number changes, yet WIS still holds the lead.
+path = f"../data/{subject.lower()}_data.txt"
 
-        There is still a strong presence of professors who studied at the USSR being 5.6% of the faculty. Where BIU
-        having 13% and TAU, WIS, and HUJI having only 2% USSR faculty. This also is not suprising and these faculty
-        members are mostly at the
-        ages of 60.
-        
-        ### Thoughts
-        Why do we see such trends? Is this a relevant metric to compare universities?
+sank_fig = sankey(Path(__file__).parent / path, subject)
+st.write(f" ## {subject.capitalize()}")
 
-        This data is incomplete, how many physcists work in other faculties? Maybe WIS is extremly good ad training
-        physicists that get into physics departments while the Technion trains those who get into Life Sciences departments?
-        This will be partly answered when I will have the time to analyze the chemistry departments data.
-        
-        What is the variance of PhD students quality between institutes? Students tend inertially contniune to grad school
-        at the same institute where they did their undergraduate studies. How do students choose where to study their bachelors
-        degree? So many questions left unanswered, but they are vital for the flourish of an institution as without good grad
-        students research cannot move forward.
-        Finally, as in every competitive field the fight is not over students, but over the good ones.
-    """)
-elif subject == "Chemistry":
-    try:
-        path = "../data/chemistry.txt"
-        sank_fig = sankey(Path(__file__).parent / path, subject)
-        st.write(f" ## {subject.capitalize()} ")
-        st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
-    except FileNotFoundError as e:
-        st.error(f"""
-            Data file for {subject} does not exist yet.
-            {e}
-        """)
+with open(f"text/{subject.lower()}_sankey.txt") as f:
+    phys_txt = ''.join(f.readlines())
+st.write(phys_txt)
+
+st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
+st.caption(f"""{subject.capitalize()} PI's flow. On the left where PI's studied and on the right where they got their tenure
+    position.""")
+
+with open(f"text/{subject.lower()}_analysis.txt") as f:
+    phys_txt = ''.join(f.readlines())
+st.write(phys_txt)
+

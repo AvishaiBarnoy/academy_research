@@ -10,18 +10,20 @@ st.markdown("""
     in the natural sciences, math, and CS.
     
     The project has two main branches:
-    1. Mobility in exact science, mostly where PI's did their PhDs and post-doc
-    2. Women in faculties - very much under construction
+    1. Mobility in exact science, mostly where PI's did their PhD, post-doc, and where they got their
+        tenure track position.
+    2. Women in faculties - very much under construction.
 
     I don't have a catchy name but this is my investigation into Israeli natural science faculties.
     But if you do I will be happy to hear your suggestions
 
     ### Want to help?
     - Check out the missing data, maybe you know something that's missing that I don't!
-    - Suggest some analysis 
+    - Suggest some analysis
+    - Find a cool name for the project
 
     ### Contact
-    Feel free to contact me on my [twitter](https://twitter.com/avishai231) account with anything from "let's sit for a coffee"
-    to detailed suggestions for further analysis and expansion of the project.
-
+    Feel free to contact me on my [twitter](https://twitter.com/avishai231) account with anything from "let's sit
+    for a coffee" to detailed suggestions for further analysis and expansion of the project. Or, you can open a PR
+    or and issue on the [github repository](https://github.com/avishai231/academy_research) for the project.
 """)

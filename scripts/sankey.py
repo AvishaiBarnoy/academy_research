@@ -33,7 +33,7 @@ def sankey(filepath, subject):
 
     data = go.Sankey(link=link, node=node)
     fig = go.Figure(data)
-    title=f"{subject.capitalize()} PI and where they did their Phd"
-    fig.update_layout(title_text=title, font_size=10)
+    #title=f"{subject.capitalize()} PI and where they did their Phd"
+    #fig.update_layout(title_text=title, font_size=10)
     
     return fig
