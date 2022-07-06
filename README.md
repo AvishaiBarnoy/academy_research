@@ -17,6 +17,15 @@ and graduate in STEM.
 - text/ text files for the pages to draw from so that pages won't be too crowded
 - in_progress/ pages I'm thinking to add but aren't really active work
 
+# Local install and run
+To locally install and run the applet:
+1. clone the repository
+2. create and activate a virtual environment ```python -m venv venv``` then ```source venv/bin/activate```
+3. install requirements: ```pip inatall -r requierments.txt```
+4. run the applet ```streamlit run home.py```
+
+And you're good to go.
+
 # Author
 Contributors names and contact info
 
