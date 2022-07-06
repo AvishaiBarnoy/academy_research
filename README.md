@@ -6,7 +6,8 @@ This is the webapp for my investigation of the Israeli academic science communit
 Currently only where professors studied and where they got their tenure position, and
 only for physics. In the future it will include data for the chemistry departments.
 
-Another future project is data about women professors in STEM.
+Another future project is to analyze a lot of data I have about gender PI's, undergraduate
+and graduate in STEM.
 
 ## Repository structure
 *Folder Structure*
