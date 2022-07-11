@@ -1,0 +1,4 @@
+
+Academic flow, on the left of the chart is the "source" - which institute professors
+studied for their PhD in. On the right is where the PI's got their tenure track
+position. So one can see which institute trained and provided researchers to where. 

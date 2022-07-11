@@ -1,6 +1,7 @@
 import streamlit as st
 from pathlib import Path
 from scripts.sankey import sankey
+import scripts.present_text as pt
 
 st.markdown("""
         # Academic Mobility
@@ -31,17 +32,12 @@ subject = st.sidebar.radio("Select subjec to show flow", ("Physics", "Chemistry"
 path = f"../data/{subject.lower()}_data.txt"
 
 sank_fig = sankey(Path(__file__).parent / path, subject)
-st.write(f" ## {subject.capitalize()}")
+st.write(f" ## {subject.capitalize()}") # subject title
 
-with open(f"text/{subject.lower()}_sankey.txt") as f:
-    phys_txt = ''.join(f.readlines())
-st.write(phys_txt)
+pt.text_intro_subject(subject)
 
 st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
 st.caption(f"""{subject.capitalize()} PI's flow. On the left where PI's studied and on the right where they got their tenure
     position.""")
 
-with open(f"text/{subject.lower()}_analysis.txt") as f:
-    phys_txt = ''.join(f.readlines())
-st.write(phys_txt)
-
+pt.text_sankey_analysis(subject)

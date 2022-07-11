@@ -1,0 +1,11 @@
+	BIU	TAU	Ariel	Technion	BGU	HUJI	WIS
+BIU	4	0	2	1	2	1	1
+TAU	1	8	1	1	2	3	4
+Ariel	0	0	0	0	0	0	0
+Technion	0	7	0	8	0	6	3
+BGU	1	0	1	1	2	0	1
+HUJI	4	6	1	6	4	19	10
+WIS	8	7	3	8	7	8	17
+USA	3	0	1	1	4	1	6
+Europe	2	0	0	2	1	1	6
+USSR	0	1	2	0	0	0	1

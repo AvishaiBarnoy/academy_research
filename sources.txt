@@ -2,3 +2,9 @@ https://discuss.streamlit.io/t/check-if-running-in-a-streamlit-session/842/6
 https://docs.streamlit.io/library/get-started/multipage-apps/create-a-multipage-app
 https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart
 https://docs.streamlit.io/library/api-reference/control-flow/st.form
+https://www.youtube.com/watch?v=1Xb3-BBCtCE
+https://discuss.streamlit.io/t/login-form-using-st-form/26722
+https://docs.streamlit.io/library/components/components-api
+https://discuss.streamlit.io/t/text-input-widget-r2l/2471/5
+https://markdowntohtml.com/
+

@@ -9,6 +9,9 @@ only for physics. In the future it will include data for the chemistry departmen
 Another future project is to analyze a lot of data I have about gender PI's, undergraduate
 and graduate in STEM.
 
+The project is written in english because streamlit doesn't support right-to-left natively, and I
+really don't want to write the website with their HTML api.
+
 ## Repository structure
 *Folder Structure*
 - data/ you will find all relevant data for figure generation
@@ -25,6 +28,15 @@ To locally install and run the applet:
 4. run the applet ```streamlit run home.py```
 
 And you're good to go.
+
+# Contriubtions
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Also, don't forget to update the changes in the [`CHANGELOG.md`](./CHANGELOG.md) file.
+
+Statistical analysis is gathered in the ```data/``` folder, while the code for the webapp is located at ```pages/```
+
+
+Please make sure to write tests as appropriate, I (Avishai) didn't do the proper and appropriate work so there are currently no tests.
+
 
 # Author
 Contributors names and contact info
