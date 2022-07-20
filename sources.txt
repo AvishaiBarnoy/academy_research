@@ -8,3 +8,5 @@ https://docs.streamlit.io/library/components/components-api
 https://discuss.streamlit.io/t/text-input-widget-r2l/2471/5
 https://markdowntohtml.com/
 
+https://academic.openu.ac.il/natural_sciences/chemistry/pages/staff.aspx
+https://academic.openu.ac.il/natural_sciences/physics/pages/staff.aspx

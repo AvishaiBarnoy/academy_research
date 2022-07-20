@@ -1,4 +1,7 @@
 ### Analysis
+
+> All that is gold does not glitter
+
 Each institute (except Ariel and BGU) has the highest precentage of researchers from the same institue.
 This would make sense as researchers already know the candidate and if he's goog enough he will be accepted.
 I don't understand why in BGU only 5% of the physics faculty studied at BGU. Ariel makes sense as it is still
@@ -16,11 +19,10 @@ ages of 60.
 ### Thoughts
 Why do we see such trends? Is this a relevant metric to compare universities?
 
-This data is incomplete, how many physcists work in other faculties? Maybe WIS is extremly good ad training
+This data is [incomplete](/missing_data), how many physcists work in other faculties? Maybe WIS is extremly good ad training
 physicists that get into physics departments while the Technion trains those who get into Life Sciences departments?
-This will be partly answered when I will have the time to analyze the chemistry departments data.
-        
-What is the variance of PhD students quality between institutes? Students tend inertially contniune to grad school
+
+What is the variance of PhD students quality between institutes? Students tend inertially continue to grad school
 at the same institute where they did their undergraduate studies. How do students choose where to study their bachelors
 degree? So many questions left unanswered, but they are vital for the flourish of an institution as without good grad
 students research cannot move forward.

@@ -21,14 +21,14 @@ st.markdown("""
 
 st.sidebar.header("Sankey Graphs")
 st.write("""
-    This section will show two (currently only one) sankey graphs. One for physicsts and 
-    another for chemsits. Each graph shows where the PI's from different institutions studied
-    for their PhD and where they were accepted for their current tenure track.
+    This section will show two sankey graphs. One for physicsts and another for chemsits. Each graph shows
+    where the PI's from different institutions studied for their PhD and where they were accepted for their
+    current tenure track.
 
     Data was collected on 2021 and is only relevant for active members without emeritii.
 """)
 
-subject = st.sidebar.radio("Select subjec to show flow", ("Physics", "Chemistry"))
+subject = st.sidebar.radio("Select subject to show flow", ("Physics", "Chemistry"))
 path = f"../data/{subject.lower()}_data.txt"
 
 sank_fig = sankey(Path(__file__).parent / path, subject)

@@ -1,2 +1,22 @@
+### Analysis
 
-Not all who wander are lost
+> Not all who wander are lost
+
+We can see that the older institutes (HUJI, Technion, WIS, TAU) having the a higher (or same as for Technion)
+precentage of PI's that graduated from their own ranks, while for the younger institutes (BIU, BGU, Ariel) WIS
+graduates take the majority. WIS trained the most chemists, 58 or 29%, with HUJI not far behind with 50 or 25%.
+Then comes Technion with 24 (12%) and TAU 20 (10%).
+
+It seems that less chemsitry faculty came from the USSR and although they are of the older layer of faculty members
+they only account for 2% (5.6% in physics).
+
+There is a correlation coefficient of 0.97 between absolute department size and the number of faculty the department
+trained. The correlation between the self preference and faculty trained is 0.88.
+
+### Thoughts
+Why do we see such trends? Is this a relevant metric to compare universities?
+
+Unlike for physics, I managed to get data for 94% of chemistry faculty. Though data about trained chemists in other
+faculties is still unavilable.
+
+[ Data on number of PhD gradutes from each institution by year ]
