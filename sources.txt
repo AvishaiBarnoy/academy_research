@@ -6,6 +6,7 @@ https://www.youtube.com/watch?v=1Xb3-BBCtCE
 https://discuss.streamlit.io/t/login-form-using-st-form/26722
 https://docs.streamlit.io/library/components/components-api
 https://discuss.streamlit.io/t/text-input-widget-r2l/2471/5
+
 https://markdowntohtml.com/
 
 https://academic.openu.ac.il/natural_sciences/chemistry/pages/staff.aspx

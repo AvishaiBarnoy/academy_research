@@ -19,4 +19,4 @@ Why do we see such trends? Is this a relevant metric to compare universities?
 Unlike for physics, I managed to get data for 94% of chemistry faculty. Though data about trained chemists in other
 faculties is still unavilable.
 
-[ Data on number of PhD gradutes from each institution by year ]
+In fututre data on number of PhD gradutes from each institution by year will be processed and made availabe here.
