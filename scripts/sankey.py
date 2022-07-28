@@ -12,7 +12,7 @@ def sankey(filepath, subject):
     returns plotly figure object
     """
     lines = read_data(filepath)
-    link_colors = ['#EBBAB5', '#A6E3d7', '#FEF3C7', '#CBB4D5', '#EC7063', '#48C9B0', '#AF7AC5']
+    link_colors = ['#EBBAB5', '#A6E3d7', '#FEF3C7', '#CBB4D5', '#EC7063', '#48C9B0', '#AF7AC5', '#964B00', '#678fe1' ]
     color_link = []
 
     labels = lines[0] + [line[0] for line in lines[1:]]   # create labels
