@@ -12,3 +12,7 @@ def text_sankey_analysis(subject):
         phys_txt = ''.join(f.readlines())
     st.write(phys_txt)
 
+def women_text(filepath):
+    with open (filepath) as f:
+        text = ''.join(f.readlines())
+    st.write(text)

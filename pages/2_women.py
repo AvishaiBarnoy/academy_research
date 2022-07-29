@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from scripts.column import col_institute, col_subject
+from scripts.present_text import 
 from pathlib import Path
 import plotly.graph_objects as go
 

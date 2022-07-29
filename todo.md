@@ -1,6 +1,7 @@
 # To Do:
 ## Web App
 1. add basic analysis to women section
+2. bring order to text printing library
 
 ## Data
 1. automatic script to generate flow matrix (input for sankey) from tabular data
