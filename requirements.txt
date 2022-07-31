@@ -94,7 +94,7 @@ stack-data==0.3.0
 systemd-python==234
 tifffile==2022.5.4
 traitlets==5.3.0
-Twisted==18.9.0
+Twisted==22.4.0
 ubuntu-advantage-tools==27.9
 ufw==0.36
 unattended-upgrades==0.1
