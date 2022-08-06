@@ -11,3 +11,11 @@ https://markdowntohtml.com/
 
 https://academic.openu.ac.il/natural_sciences/chemistry/pages/staff.aspx
 https://academic.openu.ac.il/natural_sciences/physics/pages/staff.aspx
+
+# networkx + streamlit figure
+https://discuss.streamlit.io/t/streamlit-and-visualization-of-network-x-structures/19023/2
+https://en.wikipedia.org/wiki/PageRank
+https://www.cs.cornell.edu/~rafael/networks-html/chapter9.html#x1-940011
+https://en.wikipedia.org/wiki/Adjacency_matrix
+https://networkx.org/documentation/stable/reference/classes/digraph.html
+https://networkx.org/documentation/stable/auto_examples/drawing/plot_weighted_graph.html
