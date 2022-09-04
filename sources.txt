@@ -19,3 +19,8 @@ https://www.cs.cornell.edu/~rafael/networks-html/chapter9.html#x1-940011
 https://en.wikipedia.org/wiki/Adjacency_matrix
 https://networkx.org/documentation/stable/reference/classes/digraph.html
 https://networkx.org/documentation/stable/auto_examples/drawing/plot_weighted_graph.html
+
+# network analysis
+https://towardsdatascience.com/network-analysis-d734cd7270f8
+https://networkx.org/documentation/stable/reference/classes/generated/networkx.Graph.degree.html
+https://networkx.org/documentation/stable/auto_examples/drawing/plot_degree.html
