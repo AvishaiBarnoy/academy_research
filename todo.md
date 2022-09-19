@@ -2,6 +2,7 @@
 ## Web App
 1. add basic analysis to women section
 2. bring order to text printing library
+3. edit text for flow
 
 ## Data
 1. automatic script to generate flow matrix (input for sankey) from tabular data
@@ -9,6 +10,5 @@
 3. add Haifa and OpenU to women STEM
 
 ## Network Analysis
-1. add all connections between nodes as a dictionary
-2. add a weight between them, calculate straight from table, load it with pandas to get correct lines
+1. add a weight between them, calculate directly from table, load data with pandas to get correct lines
     and columns

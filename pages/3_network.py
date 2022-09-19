@@ -6,6 +6,8 @@ from pathlib import Path
 import pandas as pd
 
 st.markdown("""
+    # Network Analysis - Under Construction
+    This section is under construction and therefore includes, thoughts, ideas and half-backed results.
     ## Ideas
     The weight of each edge is the ratio of the amount of professors each institute contributed to the other.
     The size of a node is proporsional to self recruitments.
