@@ -3,13 +3,14 @@ This is the webapp for my investigation of the Israeli academic science communit
 
 # Description
 ## What's in the project
-Currently only where professors studied and where they got their tenure position, and
-only for physics. In the future it will include data for the chemistry departments.
+There are three sections
 
-Another future project is to analyze a lot of data I have about gender PI's, undergraduate
-and graduate in STEM.
+1. mobility - where researchers graduated with their PhD and where they got a tenure position
+currently only for physics and chemistry.
+2. women - women in STEM fields in different institutes 
+3. network - network analysis of mobility data, under construction
 
-The project is written in english because streamlit doesn't support right-to-left natively, and I
+The project is written in english because streamlit doesn't natively support right-to-left, and I
 really don't want to write the website with their HTML api.
 
 ## Repository structure
@@ -30,13 +31,13 @@ To locally install and run the applet:
 And you're good to go.
 
 # Contriubtions
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Also, don't forget to update the changes in the [`CHANGELOG.md`](./CHANGELOG.md) file.
+Pull requests are welcome. For major changes, please open an issue first to discus the change you want to make.
 
-Statistical analysis is gathered in the ```data/``` folder, while the code for the webapp is located at ```pages/```
+Statistical analysis is gathered in the [```data/```](data/) folder, while the code for the webapp is
+located at [```pages/```](pages/)
 
 
 Please make sure to write tests as appropriate, I (Avishai) didn't do the proper and appropriate work so there are currently no tests.
-
 
 # Author
 Contributors names and contact info
