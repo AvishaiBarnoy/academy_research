@@ -3,6 +3,7 @@
 1. add basic analysis to women section
 2. bring order to text printing library
 3. edit text for flow
+4. change xkcd plots from savefig
 
 ## Data
 1. automatic script to generate flow matrix (input for sankey) from tabular data
