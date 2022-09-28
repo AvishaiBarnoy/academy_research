@@ -7,16 +7,20 @@ def col_institute(stem_data, institute, kind):
         "Technion":"Technion","Tel-Aviv":"TAU"}
     institute_data = stem_data[stem_data["institute"] == translation_dict[institute]] 
     if kind == "precentage":
-        y_men = institute_data["men"]/institute_data["total"]*100
+        #y_men = institute_data["men"]/institute_data["total"]*100
         y_women = institute_data["women"]/institute_data["total"]*100
+        column_fig = go.Figure(data=[
+            go.Bar(name="Women", x=institute_data["department"], y=y_women)
+            ],
+            layout_title=f"Women in STEM by Institution {kind}")
     elif kind == "absolute":
         y_men = institute_data["men"]
         y_women = institute_data["women"]
-    column_fig = go.Figure(data=[
-        go.Bar(name="Women", x=institute_data["department"], y=y_women),
-        go.Bar(name="Men", x=institute_data["department"], y=y_men)
-        ],
-        layout_title=f"Women in STEM by Institution {kind}")
+        column_fig = go.Figure(data=[
+            go.Bar(name="Women", x=institute_data["department"], y=y_women),
+            go.Bar(name="Men", x=institute_data["department"], y=y_men)
+            ],
+            layout_title=f"Women in STEM by Institution {kind}")
     if kind == "precentage": column_fig.update_yaxes(range=[0,100])
     st.plotly_chart(column_fig, use_container_width=False,sharing="streamlit")
     st.caption(f"Women in different STEM departments at {institute}, {kind}.")
