@@ -14,7 +14,7 @@ def get_path(subject, degree):
 
     year = data["year"].tolist()
     women = data["women"].tolist()
-    men = (data["men"]-data["women"]).tolist()
+    men = (data["total"]-data["women"]).tolist()
 
     return women, men, year
 
