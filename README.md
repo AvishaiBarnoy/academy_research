@@ -8,7 +8,8 @@ There are three sections
 1. mobility - where researchers graduated with their PhD and where they got a tenure position
 currently only for physics and chemistry.
 2. women - women in STEM fields in different institutes 
-3. network - network analysis of mobility data, under construction
+3. graduation - graduation trend by degrees, institute, and sex (men/women as data only available for that)
+4. network - network analysis of mobility data, under construction
 
 The project is written in english because streamlit doesn't natively support right-to-left, and I
 really don't want to write the website with their HTML api.

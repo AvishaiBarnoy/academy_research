@@ -68,7 +68,7 @@ def plot_by_institute(institute, subject, save=False):
             ax.plot(year, students,'o-',markersize=5,label=deg)
             ax.set_xlabel("year")
             ax.set_ylabel("number of students")
-            ax.set_title(f"Number of {subject} bachelors at the {institute.capitalize()}")
+            ax.set_title(f"Number of {subject} by degree graduates at the {institute.capitalize()}")
         ax.grid(True, lw=0.5, zorder=0)
         plt.ion()
         ax.legend()
