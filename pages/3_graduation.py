@@ -21,7 +21,7 @@ st.pyplot(trend_plot)
 
 
 institute_list = ["Ariel", "OpenU", "WIS", "BGU", "Haifa", "BIU", "TAU", "Technion", "HUJI"] 
-if subject == "biology":
+if subject == "biology" or subject == "chemistry":
     institute = st.selectbox("Choose an institute", institute_list) 
     by_institution = ptg.plot_by_institute(institute, subject)
     st.pyplot(by_institution)

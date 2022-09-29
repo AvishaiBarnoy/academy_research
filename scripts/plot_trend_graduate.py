@@ -50,7 +50,7 @@ def plot_all_degrees_for_subject(subject, degrees, save=False):
             women, men ,year = get_path(subject, deg)
             students = [i+j for i,j in zip(women,men)]
             ax.plot(year, students, "o-", markersize=5, label=deg)
-        ax.set_xlabel("year"); ax.set_ylabel("number of students")
+        ax.set_xlabel("year"); ax.set_ylabel("number of graduates")
         ax.set_title(f"Number of graduates in {subject} by degree")
         ax.legend()
         ax.grid(True, lw=0.5, zorder=0)
@@ -67,7 +67,7 @@ def plot_by_institute(institute, subject, save=False):
             students, year = get_institute(subject, deg, institute)
             ax.plot(year, students,'o-',markersize=5,label=deg)
             ax.set_xlabel("year")
-            ax.set_ylabel("number of students")
+            ax.set_ylabel("number of graduates")
             ax.set_title(f"Number of {subject} graduates by degree at the {institute.capitalize()}")
         ax.grid(True, lw=0.5, zorder=0)
         plt.ion()
