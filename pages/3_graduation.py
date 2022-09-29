@@ -8,7 +8,7 @@ st.write("""
         """)
 
 
-subject_list = ["physics", "chemistry"]
+subject_list = ["physics", "chemistry", "biology"]
 degree_list = ["BSc", "MSc", "PhD"]
 
 subject = st.radio("Select a research field to show data for", subject_list)
@@ -18,3 +18,8 @@ st.pyplot(all_degrees)
 degree = st.radio("Select degrees to show data for", degree_list)
 trend_plot = ptg.plot_by_gender(subject, degree)
 st.pyplot(trend_plot)
+
+
+st.markdown("""
+    - data was collected from the Israeli Central Bureau of Statistics
+    - biology section includes all life sciences and agrictulture""")

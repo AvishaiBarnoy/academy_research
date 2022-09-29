@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 from pathlib import Path
-import numpy as np
 import streamlit as st
 
-subjects = ["physics", "chemistry"]
+subjects = ["physics", "chemistry", "biology"]
 degrees = ["BSc", "MSc", "PhD"]
 
 def get_path(subject, degree): 
@@ -15,11 +14,10 @@ def get_path(subject, degree):
     year = data["year"].tolist()
     women = data["women"].tolist()
     men = (data["total"]-data["women"]).tolist()
-
     return women, men, year
 
 def plot_by_gender(subject, degree, save=False):
-    women, men ,year = get_path(subject, degree)
+    women, men, year = get_path(subject, degree)
 
     with plt.xkcd():
         fig, ax = plt.subplots(figsize=(8, 6), dpi=90)
@@ -28,6 +26,7 @@ def plot_by_gender(subject, degree, save=False):
         ax.set_xlabel("year"); ax.set_ylabel("number")
         ax.set_title(f"Number of {degree} graduates in {subject}")
         ax.legend()
+        ax.grid(True, lw=0.5, zorder=0)
         plt.ion() 
         if save == True:
             savepath = f"../images/"
@@ -43,8 +42,9 @@ def plot_all_degrees_for_subject(subject, degrees, save=False):
             students = [i+j for i,j in zip(women,men)]
             ax.plot(year, students, "o-", markersize=5, label=deg)
         ax.set_xlabel("year"); ax.set_ylabel("number of students")
-        ax.set_title(f"Number of students in {subject} by degree")
+        ax.set_title(f"Number of graduates in {subject} by degree")
         ax.legend()
+        ax.grid(True, lw=0.5, zorder=0)
         plt.ion()
         if save == True:
             savepath = f"../images/"

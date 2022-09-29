@@ -13,6 +13,9 @@ st.markdown("""
     1. Mobility in exact science, mostly where PI's did their PhD, post-doc, and where they got their
         tenure track position.
     2. Women in faculties - very much under construction.
+    3. Graduation - under construction, but will include the yearly trend of undergrads and graudate students
+        by institution and subject.
+    4. network - under construction, network analysis of the mobility data
 
     I don't have a catchy name but this is my investigation into Israeli natural science faculties.
     But if you do I will be happy to hear your suggestions
