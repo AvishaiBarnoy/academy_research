@@ -20,6 +20,12 @@ trend_plot = ptg.plot_by_gender(subject, degree)
 st.pyplot(trend_plot)
 
 
+institute_list = ["Ariel", "OpenU", "WIS", "BGU", "Haifa", "BIU", "TAU", "Technion", "HUJI"] 
+if subject == "biology":
+    institute = st.selectbox("Choose an institute", institute_list) 
+    by_institution = ptg.plot_by_institute(institute, subject)
+    st.pyplot(by_institution)
+
 st.markdown("""
     - data was collected from the Israeli Central Bureau of Statistics
     - biology section includes all life sciences and agrictulture""")
