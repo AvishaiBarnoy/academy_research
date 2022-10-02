@@ -10,6 +10,7 @@
 2. correlation between precentage of PIs trained and preference of graduates from the same institute
 3. add Haifa and OpenU to women STEM
 4. check more data points for graduation - cbs
+5. add basic statistical descriptors for each figure: variance, mean, etc.
 
 ## Network Analysis
 1. add a weight between them, calculate directly from table, load data with pandas to get correct lines

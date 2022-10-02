@@ -21,10 +21,13 @@ st.pyplot(trend_plot)
 
 
 institute_list = ["Ariel", "OpenU", "WIS", "BGU", "Haifa", "BIU", "TAU", "Technion", "HUJI"] 
-#if subject == "biology" or subject == "chemistry":
 institute = st.selectbox("Choose an institute", institute_list) 
 by_institution = ptg.plot_by_institute(institute, subject)
 st.pyplot(by_institution)
+
+old_subject_data = st.radio("Choose parent science field", ["physical", "biological"])
+test = ptg.plot_old_data_graduation_all(old_subject_data, degree_list)
+st.pyplot(test)
 
 st.markdown("""
     - data was collected from the Israeli Central Bureau of Statistics

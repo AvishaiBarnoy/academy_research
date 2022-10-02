@@ -43,7 +43,6 @@ def plot_by_gender(subject, degree, save=False):
         return fig
 
 def plot_all_degrees_for_subject(subject, degrees, save=False):
-    #for subj in subjects:
     with plt.xkcd():
         fig, ax = plt.subplots(figsize=(8, 6), dpi=90)
         for deg in degrees:
@@ -75,6 +74,26 @@ def plot_by_institute(institute, subject, save=False):
         if save == True:
             savepath = f"../images/"
             plt.savefig(f"bsc_{institute}_chemistry_xkcd.png")
+        return fig
+
+def plot_old_data_graduation_all(subject, degrees, save=False):
+    filepath = f"../data/combined_data_old.csv"
+    path = Path(__file__).parent / filepath
+    data = pd.read_csv(path)
+    with plt.xkcd():
+        fig, ax = plt.subplots(figsize=(8, 6), dpi=90)
+        year = data["year"].tolist()  
+        for deg in degrees:
+            grad_number = data[f"{deg.lower()}_{subject}"] 
+            ax.plot(year, grad_number, "o-", markersize=5, label=deg)
+        ax.set_xlabel("year"); ax.set_ylabel("number of graduates")
+        ax.set_title(f"Number of graduates in the {subject} sciences")
+        ax.legend()
+        ax.grid(True, lw=0.5, zorder=0)
+        plt.ion()
+        if save == True:
+            savepath = f"../images/"
+            plt.savefig(Path(__file__).parent / f"{savepath}all_degrees_{subj}_xkcd.png")
         return fig
 
 if __name__ == "__main__":
