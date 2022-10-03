@@ -25,7 +25,8 @@ institute = st.selectbox("Choose an institute", institute_list)
 by_institution = ptg.plot_by_institute(institute, subject)
 st.pyplot(by_institution)
 
-old_subject_data = st.radio("Choose parent science field", ["physical", "biological"])
+old_subject_data = st.radio("Choose parent science field", ["physical", "biological", "engineering and architecture", \
+        "math, cs and statistics"])
 test = ptg.plot_old_data_graduation_all(old_subject_data, degree_list)
 st.pyplot(test)
 

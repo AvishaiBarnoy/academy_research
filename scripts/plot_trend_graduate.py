@@ -80,6 +80,8 @@ def plot_old_data_graduation_all(subject, degrees, save=False):
     filepath = f"../data/combined_data_old.csv"
     path = Path(__file__).parent / filepath
     data = pd.read_csv(path)
+    if subject == "engineering and architecture": subject = "engineer"
+    elif subject == "math, cs and statistics": subject = "math"
     with plt.xkcd():
         fig, ax = plt.subplots(figsize=(8, 6), dpi=90)
         year = data["year"].tolist()  

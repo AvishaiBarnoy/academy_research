@@ -11,6 +11,8 @@
 3. add Haifa and OpenU to women STEM
 4. check more data points for graduation - cbs
 5. add basic statistical descriptors for each figure: variance, mean, etc.
+6. add cs and math to bsc/msc/phd figure from 1987.
+7. add translation function to translate from st.radio() options to data categories naming
 
 ## Network Analysis
 1. add a weight between them, calculate directly from table, load data with pandas to get correct lines
