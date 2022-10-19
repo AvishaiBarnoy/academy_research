@@ -13,6 +13,8 @@
 5. add basic statistical descriptors for each figure: variance, mean, etc.
 6. add cs and math to bsc/msc/phd figure from 1987.
 7. add translation function to translate from st.radio() options to data categories naming
+8. change data reading function in snakey.py (and look at other files) to just pandas read_csv(delimiter='\t')
+9. change in nopa so that nopa function returns a proper pandas df
 
 ## Network Analysis
 1. add a weight between them, calculate directly from table, load data with pandas to get correct lines
