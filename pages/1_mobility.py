@@ -22,7 +22,7 @@ pt.text_intro_subject(subject)
 import numpy as np
 import pandas as pd
 
-#st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
+st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
 
 #st.write(f"""
 #        ## Nepotism Index
