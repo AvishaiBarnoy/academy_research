@@ -1,9 +1,11 @@
 import plotly.graph_objects as go
 import streamlit as st
+import pandas as pd
 
 def read_data(filepath):
     with open(filepath) as f:
         lines = [line.strip().split("\t") for line in f.readlines()]
+    #lines = pd.read_csv(filepath, delimiter="\t", index_col=0)
     return lines
 
 def sankey(filepath, subject):

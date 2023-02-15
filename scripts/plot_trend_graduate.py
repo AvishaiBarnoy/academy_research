@@ -61,6 +61,9 @@ def plot_all_degrees_for_subject(subject, degrees, scale="linear", save=False):
     return fig
 
 def plot_by_institute(institute, subject, scale="linear", save=False):
+    institutes_conversion = {"Ariel": "Ariel U.", "OpenU": "the Open University", "WIS":"the Weizmann Inst.",
+            "BGU":"Ben-Gurion U.","Haifa":"Haifa U.", "BIU":"Bar-Ilan U.", "TAU":"Tel-Aviv U.",
+            "Technion":"the Technion", "HUJI":"Hebrew U."}
     plt.xkcd()
     fig, ax = plt.subplots(figsize=(8, 6), dpi=90)
     plt.yscale(scale)
@@ -69,7 +72,8 @@ def plot_by_institute(institute, subject, scale="linear", save=False):
         ax.plot(year, students,'o-',markersize=5,label=deg)
         ax.set_xlabel("year")
         ax.set_ylabel("number of graduates")
-        ax.set_title(f"Number of {subject} graduates by degree at the {institute.capitalize()}")
+        #if 
+        ax.set_title(f"Number of {subject} graduates by degree at {institutes_conversion[institute]}")
     ax.grid(True, lw=0.5, zorder=0)
     plt.ion()
     ax.legend()
@@ -100,6 +104,13 @@ def plot_old_data_graduation_all(subject, degrees, scale="linear" ,save=False):
         savepath = f"../images/"
         plt.savefig(Path(__file__).parent / f"{savepath}all_degrees_{subj}_xkcd.png")
     return fig
+
+def statistics(data):
+    import statistics
+    mean = statistics.mean(data)
+    median = statistics.median(data)
+
+    pass
 
 if __name__ == "__main__":
     pass

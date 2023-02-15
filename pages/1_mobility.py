@@ -13,16 +13,22 @@ sank_fig = sankey(Path(__file__).parent / path, subject)
 st.write(f" ## {subject.capitalize()}") # subject title -> pt_text_intro_subject
 pt.text_intro_subject(subject)
 
-nepotism_ind = nopa.nopa(Path(__file__).parent / path)
+
+#######################
+# not yet implemented #
+#######################
+
+#nepotism_ind = nopa.nopa(Path(__file__).parent / path)
 import numpy as np
 import pandas as pd
-st.write(f"""
-        ## Nepotism Index
-        The nepotism index for {subject} is:
-        """)
-st.table(nepotism_ind)
 
-st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
+#st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
+
+#st.write(f"""
+#        ## Nepotism Index
+#        The nepotism index for {subject} is:
+#        """)
+#st.table(nepotism_ind)
 
 # methodology
 st.markdown("""
