@@ -1,9 +1,9 @@
-import streamlit as st
-import networkx as nx
-import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 from pathlib import Path
+
+import matplotlib.pyplot as plt
+import networkx as nx
 import pandas as pd
+import streamlit as st
 
 st.markdown("""
     # Network Analysis - Under Construction
@@ -24,10 +24,10 @@ edges = []
 G = nx.MultiDiGraph()
 G.add_nodes_from(inst_dict.values())
 
-for i,j in enumerate(data):
-    for k,l in enumerate(data):
-        if data[l][i] > 0:
-            edges.append((j,l,{"weight":data[l][i]}))
+for i, source in enumerate(data):
+    for _k, target in enumerate(data):
+        if data[target][i] > 0:
+            edges.append((source, target, {"weight": data[target][i]}))
 G.add_edges_from(edges)
 
 fig, ax =  plt.subplots()

@@ -1,6 +1,6 @@
-import pandas as pd
-import streamlit as st
 import plotly.graph_objects as go
+import streamlit as st
+
 
 def col_institute(stem_data, institute, kind):
     translation_dict = {"Ariel":"Ariel","Ben Gurion":"BGU","Bar Ilan":"BIU","Hebrew U.":"HUJI","Weizmann":"WIS",
@@ -21,8 +21,9 @@ def col_institute(stem_data, institute, kind):
             go.Bar(name="Men", x=institute_data["department"], y=y_men)
             ],
             layout_title=f"Women in STEM by Institution {kind}")
-    if kind == "precentage": column_fig.update_yaxes(range=[0,100])
-    st.plotly_chart(column_fig, use_container_width=False,sharing="streamlit")
+    if kind == "precentage":
+        column_fig.update_yaxes(range=[0,100])
+    st.plotly_chart(column_fig, use_container_width=False)
     st.caption(f"Women in different STEM departments at {institute}, {kind}.")
 
 def col_subject(stem_data, subject, kind):
@@ -43,6 +44,7 @@ def col_subject(stem_data, subject, kind):
             go.Bar(name="Men", x=subject_data["institute"], y=y_men)
             ],
             layout_title=f"Researchers in {subject_dict[subject]} by Institute {kind}")
-    if kind == "precentage ": column_fig.update_yaxes(range=[0,100])
-    st.plotly_chart(column_fig, use_container_width=False,sharing="streamlit")
+    if kind == "precentage ":
+        column_fig.update_yaxes(range=[0,100])
+    st.plotly_chart(column_fig, use_container_width=False)
     st.caption(f"Women in {subject} by institute, {kind}.")

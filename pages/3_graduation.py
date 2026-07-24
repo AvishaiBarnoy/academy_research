@@ -1,4 +1,5 @@
 import streamlit as st
+
 import scripts.plot_trend_graduate as ptg
 
 st.write("""

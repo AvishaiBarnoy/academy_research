@@ -1,5 +1,5 @@
-import streamlit as st
 import pandas as pd
+
 
 def nopa(filepath):
     """
@@ -15,7 +15,7 @@ def nopa(filepath):
     for i,j in enumerate(cols):
         row_i = data.iloc[i]
         sum_i = sum(row_i)
-        inst = cols[i]
+        inst = j
         if sum_i != 0:
             nopa = row_i[i]/sum_i
         else:
@@ -27,8 +27,7 @@ def nopa(filepath):
 
 if __name__ == "__main__":
     from pathlib import Path
-    import numpy as np
-    path = f"../data/physics_data.txt"
+    path = "../data/physics_data.txt"
     nopa = nopa(Path(__file__).parent / path)
     #print(nopa)
     #print(np.array(nopa))
