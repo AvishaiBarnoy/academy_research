@@ -1,9 +1,10 @@
-import streamlit as st
+from pathlib import Path
+
 import pandas as pd
+import streamlit as st
+
 from scripts.column import col_institute, col_subject
 from scripts.present_text import women_text
-from pathlib import Path
-import plotly.graph_objects as go
 
 st.markdown("""
         # Women Professors in STEM
@@ -12,7 +13,7 @@ st.markdown("""
 intro_text_path = Path(__file__).parent / "../text/women_intro.txt"
 women_text(intro_text_path)
 
-path = f"../data/women_stem.csv"
+path = "../data/women_stem.csv"
 stem_data = pd.read_csv(Path(__file__).parent / path)
 
 # Plot by institute

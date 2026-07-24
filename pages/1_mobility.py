@@ -1,8 +1,9 @@
-import streamlit as st
 from pathlib import Path
-from scripts.sankey import sankey
+
+import streamlit as st
+
 import scripts.present_text as pt
-import scripts.nopa as nopa
+from scripts.sankey import sankey
 
 st.markdown(""" # Academic Mobility """)
 
@@ -19,10 +20,8 @@ pt.text_intro_subject(subject)
 #######################
 
 #nepotism_ind = nopa.nopa(Path(__file__).parent / path)
-import numpy as np
-import pandas as pd
 
-st.plotly_chart(sank_fig,use_container_width=False,sharing="streamlit")
+st.plotly_chart(sank_fig, use_container_width=False)
 
 #st.write(f"""
 #        ## Nepotism Index

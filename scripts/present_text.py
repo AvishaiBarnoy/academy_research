@@ -1,5 +1,4 @@
 import streamlit as st
-from pathlib import Path
 
 
 def text_intro_subject(subject):
